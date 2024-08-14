@@ -1,0 +1,931 @@
+*{
+    margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+   
+
+
+}
+
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #594cd2;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #f0d8d8;
+    text-transform: uppercase;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #050404; /* Dark background for the grid */
+}
+
+h1{
+    text-align: center;
+    font-size: 150px;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #e1f9f9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #e8e2e2;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.image-item:hover .caption {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
+
+.caption2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #f4cece;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption2 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption2 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption2 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #efe9e9;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption3 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption3 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption3 {
+    opacity: 1; /* Show caption on hover */
+}
+.caption4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #adedf2;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption4 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption4 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption4 {
+    opacity: 1; /* Show caption on hover */
+}
+.caption5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #bbd1f3;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption5 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption5 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption5 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #eababa;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption6 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption6 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption6 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption7 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #f8bcf6;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption7 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption7 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption7 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption8 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #c1d3ef;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption8 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption8 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption8 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption9 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #f3eea9;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption9 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption9 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption9 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption10 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #b3b3b9;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption10 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption10 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption10 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption11 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #98a0b6;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption11 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption11 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption11 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption12 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption12 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption12 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption12 {
+    opacity: 1; /* Show caption on hover */
+}
+
+
+.caption13 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption13 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption13 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption13 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption14 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption14 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption14 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption14 {
+    opacity: 1; /* Show caption on hover */
+}
+.caption15 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption15 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption15 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption15 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption16 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(156, 139, 139, 0.7); /* Semi-transparent background */
+    color: #000000;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption16 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption16 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption16 {
+    opacity: 1; /* Show caption on hover */
+}
+.caption17 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(199, 192, 192, 0.7); /* Semi-transparent background */
+    color: #403e20;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption17 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption17 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption17 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption18 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(199, 192, 192, 0.7); /* Semi-transparent background */
+    color: #000000;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption18 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption18 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption18 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption19 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(227, 225, 225, 0.7); /* Semi-transparent background */
+    color: #2a11e6;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption19 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption19 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption19 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption20 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(213, 163, 37, 0.7); /* Semi-transparent background */
+    color: #060505;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption20 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption20 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption20 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption21 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #f35252;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption21 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption21 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption21 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption22 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(152, 204, 249, 0.7); /* Semi-transparent background */
+    color: #0b0a14;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption22 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption22 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption22 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption23 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #cdb1f7;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption23 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption23 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption23 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption24 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption24 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption24 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption24 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption25 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17, 13, 13, 0.7); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption25 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption25 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption25 {
+    opacity: 1; /* Show caption on hover */
+}
+.caption26 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(164, 151, 218, 0.7); /* Semi-transparent background */
+    color: #070708;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption26 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption26 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption26 {
+    opacity: 1; /* Show caption on hover */
+}
+.caption27 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(156, 139, 139, 0.7); /* Semi-transparent background */
+    color: #000000;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption27 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption27 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption27 {
+    opacity: 1; /* Show caption on hover */
+}
+
+.caption28 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(234, 149, 149, 0.7); /* Semi-transparent background */
+    color: #8c0000;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.caption28 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.caption28 p {
+    margin: 10px 0 0;
+} 
+.image-item:hover .caption28 {
+    opacity: 1; /* Show caption on hover */}
+
+    .caption29 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(247, 215, 215, 0.7); /* Semi-transparent background */
+        color: #ea2626;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .caption29 h3 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+    
+    .caption29 p {
+        margin: 10px 0 0;
+    } 
+    .image-item:hover .caption29 {
+        opacity: 1; /* Show caption on hover */}
+
+        .caption30 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(156, 139, 139, 0.7); /* Semi-transparent background */
+            color: #000000;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .caption30 h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        
+        .caption30 p {
+            margin: 2px 0 0;
+        } 
+        .image-item:hover .caption30 {
+            opacity: 1; /* Show caption on hover */}
+
+            .caption31 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(246, 246, 246, 0.7); /* Semi-transparent background */
+                color: #000000;
+                padding: 20px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .caption31 h3 {
+                margin: 0;
+                font-size: 1.5em;
+            }
+            
+            .caption31 p {
+                margin: 10px 0 0;
+            } 
+            .image-item:hover .caption31 {
+                opacity: 1; /* Show caption on hover */}
+
+                .caption32 {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(207, 179, 179, 0.7); /* Semi-transparent background */
+                    color: #e50505;
+                    padding: 20px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                
+                .caption32 h3 {
+                    margin: 0;
+                    font-size: 1.5em;
+                }
+                
+                .caption32 p {
+                    margin: 10px 0 0;
+                } 
+                .image-item:hover .caption32 {
+                    opacity: 1; /* Show caption on hover */}
+
+body{
+    background: black;
+    height: 100vh;
+
+}
+
+
+.wrapper1 span{
+    position: fixed;
+    bottom: -180px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    background-color: #d4d4ea;
+    box-shadow: 0 0 50px #0072ff,
+                0 0 100px #0072ff,
+                0 0 150px #33dbab,
+                0 0 200px #0072ff;
+    animation: animate 10s linear infinite;
+
+}
+.wrapper1 span:nth-child(1){
+    left: 60px;
+    animation-delay: 0.6s;
+}
+.wrapper1 span:nth-child(2){
+    left: 10%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+}
+.wrapper1 span:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;
+}
+.wrapper1 span:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+}
+.wrapper1 span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;
+
+}
+.wrapper1 span:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;
+}
+.wrapper1 span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+}
+.wrapper1 span:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;
+}
+.wrapper1 span:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;
+}
+.wrapper1 span:nth-child(10){
+    left: 90%;
+    animation-delay: 4s;
+}
+
+
+@keyframes animate{
+    0%{
+    transform: translateY(0);
+    opacity: 1;
+    }
+    80%{
+        opacity: .7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+
+  
